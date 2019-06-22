@@ -1,0 +1,8 @@
+# Este es el archivo de configuración del sitio web.
+# Por favor, ten mucho cuidado al modificar cada linea de este archivo.
+
+# URL actual de tu sitio web
+baseurl: https://foresttv.github.io
+
+# Nombre de tu sitio web
+name: ForestTV
