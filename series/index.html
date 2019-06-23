@@ -4,6 +4,28 @@ title: SERIES
 ---
 
 <div class="row container">
+	<a style="width:100%;" class="waves-effect waves-light btn modal-trigger light-blue darken-3" href="#modal1">Cuenta</a>
+	<div id="cuenta" class="modal">
+		<div class="modal-content">
+			<h4>Cuenta</h4>
+			<p align="justify">¿Aún no tienes cuenta de ForestTV?</p>
+			<p align="justify">Compra tu cuenta ahora y disfruta de los siguientes beneficios</p>
+			<ul>
+				<li>* Streaming en Google Drive</li>
+				<li>* Soporte vía WhatsApp</li>
+			</ul>
+			<p align="justify" class="bold">Recuerda que este sitio no funciona si no tienes una cuenta.</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+			<a href="{{ site.baseurl }}/cuenta.html" class="waves-effect waves-green btn-flat">Comprar</a>
+		</div>
+		<script>
+		$(document).ready(function(){
+			$('.modal').modal();
+		});
+		</script>
+	</div>
 	<ul class="collapsible">
 		{% for post in site.categories.series %}
 		<li>
@@ -1742,23 +1764,5 @@ title: SERIES
 			</div>
 		</li>
 		{% endfor %}
-		<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-		<div id="modal1" class="modal">
-			<div class="modal-content">
-				<h4>{{ post.title }}</h4>
-				<div class="video-container">
-					<iframe frameborder="0" src="https://drive.google.com/file/d/1N1NUtrFVg2Kxos2BAaP10DRnb1QfWT9J/preview"></iframe>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
-				<a href="{{ post.linkt30c21 }}" class="waves-effect waves-green btn-flat">Enlace directo</a>
-			</div>
-			<script>
-			$(document).ready(function(){
-				$('.modal').modal();
-			});
-			</script>
-		</div>
 	</ul>
 </div>
