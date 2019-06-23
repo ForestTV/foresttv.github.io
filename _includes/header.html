@@ -2,7 +2,14 @@
 		<nav>
 			<div class="nav-wrapper light-blue darken-3">
 				<a href="#" onclick="window.history.back();" class="brand-logo left"><i class="material-icons">arrow_back</i></a><a class="brand-logo"><b>{{ page.title }}</b></a>
+				<form>
+					<div class="input-field">
+						<input id="search" type="search" name="t1" required>
+						<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+						<a onclick="busca(document.all.t1.value)"><i class="material-icons">search</i></a>
+					</div>
+				</form>
 			</div>
 		</nav>
 	</header>
-	<!--window.history.go(-1);-->
+	<!-- <input name="t1" value="Texto a Buscar" /> <input onclick="busca(document.all.t1.value)" type="button" value="Buscar" />-->
