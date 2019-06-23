@@ -3,14 +3,18 @@ layout: page
 title: SERIES
 ---
 
-<p>lorem ipsum is a dolor a</p>
-
-<!--{% for post in site.categories.series %}
-		<div class="col s12 m4 l4">
-			<div class="card">
-				<div class="card-image" class="waves-effect">
-					<a target="_blank" class="waves-effect" href="{{ post.enlace }}"><img src="{{ site.baseurl }}/assets/imagenes/aliados/{{ post.nombre }}.jpg"></a>
-				</div>
+<div class="row container">
+	<ul class="collapsible">
+		{% for post in site.categories.series %}
+		<li>
+			<div class="collapsible-header">
+				<i class="material-icons">filter_drama</i>{{ post.title }}
 			</div>
-		</div>
-		{% endfor %}-->
+			<div class="collapsible-body">
+				<span>{{ post.description }}</span>
+				<span><a href="{{ post.l-drive }}">Google Drive</a></span>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
