@@ -6,11 +6,11 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{{ site.baseurl }}/assets/materialize/materialize.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/assets/materialize/materialize.js"></script>
 		<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			var elems = document.querySelectorAll('.collapsible');
-			var instances = M.Collapsible.init(elems, options);
+		$(document).ready(function(){
+			$('.collapsible').collapsible();
 		});
 		</script>
 		<style>
